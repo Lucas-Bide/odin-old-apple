@@ -11,10 +11,11 @@ body {
   max-width: 1440px;
   min-width: 1024px;
   margin: 0 auto;
-
+  /* background-color: maroon; */
   display: grid;
   gap: 3px;
   position: relative;
+
 }
 
 /* NAVIGATION */
@@ -100,4 +101,17 @@ nav {
   height: 621px;
   background: blue url("../images/your_verse_hero.jpg") 0 -690px no-repeat;
   background-size: fill;
+}
+
+/* PROMOTIONS */
+
+.promos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.promo {
+  width: 100%;
+  min-height: 200px;
 }
