@@ -101,9 +101,28 @@ nav {
   height: 650px;
   background: blue url("../images/your_verse_hero.jpg") 0 -660px no-repeat;
   background-size: fill;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* PROMOTIONS */
+#hero-title {
+  margin-top: 210px;
+}
+
+#hero-film {
+  width: 600px;
+  height: 30px;
+  margin-top: 25px;
+  background: url("../images/cta_your_verse_27pt.png") -200px -3px no-repeat;
+}
+
+#hero-film:hover {
+  background: url("../images/cta_your_verse_27pt.png") -200px -35px no-repeat;
+}
+
+/* PROMOTIONS / FOOTER */
 
 .promos {
   display: grid;
