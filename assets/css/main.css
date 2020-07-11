@@ -11,7 +11,7 @@ body {
   max-width: 1440px;
   min-width: 1024px;
   margin: 0 auto;
-  /* background-color: maroon; */
+  
   display: grid;
   gap: 3px;
   position: relative;
@@ -38,7 +38,7 @@ nav {
   width: 100px;
 }
 
-/* Set menu item backgrounds */
+/* :hoverSet menu item backgrounds */ 
 
 .mi-01 {
   background: var(--menu-icons) -30px 2px no-repeat;
@@ -71,6 +71,33 @@ nav {
 
 .mi-click {
   border-right: 1px solid #484848;
+}
+
+/* Don't know how to add the radial gradient while preserving previous backround, so not DRY. */ 
+
+.mi-01:hover {
+  background: var(--menu-icons) -30px 2px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-02:hover {
+  background: var(--menu-icons) -30px -28px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-03:hover {
+  background: var(--menu-icons) -30px -58px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-04:hover {
+  background: var(--menu-icons) -30px -88px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-05:hover {
+  background: var(--menu-icons) -30px -118px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-06:hover {
+  background: var(--menu-icons) -30px -148px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-07:hover {
+  background: var(--menu-icons) -30px -178px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
+}
+.mi-08:hover {
+  background: var(--menu-icons) -30px -208px no-repeat, radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(8,11,13,0.25) 100%);
 }
 
 /* Search bar */
